@@ -1,0 +1,16 @@
+Use cors npm module.
+        - This is easier and faster way to enable CORS in your application. First, install cors module:
+        # npm install --save cors
+- Now that cors module is installed in your app, use it as middleware and you're done. All your requests are now CORS enabled:
+        ## app.js
+            var express = require('express');
+            var cors = require('cors');
+            var app = express();
+ 
+            app.use(cors());
+
+- You can also enable CORS on only a single request with the following code:
+        ## app.js
+        var express = require('express');
+        var cors = require('cors');
+        var app = express();
